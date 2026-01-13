@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Vectors</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&family=Beiruti:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div id="container" class="hidden">
+        <div class="ui-wrapper">
+            <div class="header">
+                <div class="header-title-wrapper">
+                    <i class="fa-solid fa-location-dot header-icon"></i>
+                    <div class="header-bar"></div>
+                    <h1 id="title">Saved Vectors</h1>
+                </div>
+            </div>
+        
+            
+            <div class="vectors-container">
+                <div class="search-section">
+                    <div class="search-input-wrapper">
+                        <input type="text" id="searchInput" class="search-input" placeholder="Search vectors...">
+                        <i class="fa-solid fa-search search-icon"></i>
+                    </div>
+                    <button class="add-vector-btn" id="addVectorBtn" title="Add New Vector">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="bar-h"></div>
+
+                <div id="vectorsList" class="vectors-list">
+                    <div class="no-vectors" id="noVectors">No saved vectors found</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Vector Modal -->
+    <div id="addVectorModal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title-wrapper">
+                    <h2>Add New Vector</h2>
+                    <div id="notification" class="notification hidden"></div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Vector Title</label>
+                    <input type="text" id="addVectorTitle" class="modal-input" placeholder="Enter vector title...">
+                </div>
+                <div class="form-group">
+                    <div class="vector-type-toggle">
+                        <button type="button" class="vector-type-btn active" id="useCurrentBtn" data-type="current">
+                            <i class="fa-solid fa-location-dot"></i> Use Current Position
+                        </button>
+                        <button type="button" class="vector-type-btn" id="useCustomBtn" data-type="custom">
+                            <i class="fa-solid fa-keyboard"></i> Custom Vector
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group" id="currentVectorGroup">
+                    <div class="label-with-button">
+                        <label>Current Vector</label>
+                        <button class="copy-vector-btn" id="copyVectorBtn" title="Copy Vector">
+                            <i class="fa-solid fa-copy"></i>
+                        </button>
+                    </div>
+                    <input type="text" id="currentVectorDisplay" class="modal-input" readonly>
+                </div>
+                <div class="form-group hidden" id="customVectorGroup">
+                    <label>Custom Vector</label>
+                    <input type="text" id="customVectorInput" class="modal-input" placeholder="vector3(x, y, z) or vector4(x, y, z, heading)">
+                    <small class="vector-hint">Enter vector in format: vector3(x, y, z) or vector4(x, y, z, heading)</small>
+                </div>
+                <div class="form-group">
+                    <label>Note</label>
+                    <textarea id="addVectorNote" class="modal-textarea" placeholder="Enter note (optional)" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="privacy-toggle-wrapper">
+                        <label class="privacy-label">
+                            <span class="privacy-label-text">Privacy</span>
+                            <span class="privacy-status" id="privacyStatus">Private</span>
+                        </label>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="vectorPrivacyToggle">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancelAddVector">Cancel</button>
+                <button class="btn btn-primary" id="saveAddVector">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="banter-loader">
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+        <div class="banter-loader__box"></div>
+      </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
