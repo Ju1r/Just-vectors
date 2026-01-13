@@ -15,10 +15,11 @@ Config.Permissions = {
 -- Logs Configuration | إعدادات السجلات
 Config.Logs = {
     System = false, -- تفعيل/تعطيل نظام السجلات | Enable/disable logging system
-    Webhook = "https://discord.com/api/webhooks/1460445158389846127/zFVQjiRr4raIQ357AomVEISWubI4AfoLUG3KTSKtcNUwnK7T82mrN4VzpInio4uZf9fk" -- رابط Discord Webhook | Discord webhook URL
+    Webhook = "https://discord.com/api/webhooks/" -- رابط Discord Webhook | Discord webhook URL
 }
 
 -- Settings Configuration | إعدادات عامة
 Config.Settings = {
     SaveHeading = true, -- حفظ اتجاه اللاعب عند حفظ الموقع | Save player heading when saving location
 }
+
