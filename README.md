@@ -28,7 +28,6 @@
 ### 🔒 Security & Permissions
 - ✅ **Permission System**: Full QB-Core permission integration
 - ✅ **Resource Protection**: Automatic resource name protection
-- ✅ **Anticheat Integration**: Built-in anticheat whitelist support
 - ✅ **Role-Based Access**: Admin, God, Mod, or public access
 
 ### 🌐 Multi-Language Support
