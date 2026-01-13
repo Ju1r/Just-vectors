@@ -113,7 +113,7 @@ The script automatically checks for updates using the GitHub API. Update notific
 For support and assistance:
 - **Author**: Just.A
 - **Issues**: Open an issue on GitHub
-- **Discord**: https://discord.gg/pXQnvRNt9y
+- **Discord**: [https://discord.gg/pXQnvRNt9y](https://discord.gg/hnucPvSRHa)
 
 ## 📜 License
 
