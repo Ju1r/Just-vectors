@@ -9,6 +9,10 @@
 </div>
 
 ---
+<img width="649" height="628" alt="Screenshot 2026-01-13 061921" src="https://github.com/user-attachments/assets/2445e3ea-3f8c-4f7a-bdab-405ca80d405b" />
+
+<img width="692" height="794" alt="Screenshot 2026-01-13 061927" src="https://github.com/user-attachments/assets/7bbd1a32-aeb5-40a0-881d-ff75683f6b34" />
+---
 
 ## 📋 Description
 
